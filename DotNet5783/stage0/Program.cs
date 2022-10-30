@@ -1,2 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, small world!");
+﻿using System;
+
+namespace Targil0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            NewMethod();
+            Console.ReadKey();
+        }
+
+        private static void NewMethod()
+        {
+            Console.WriteLine("enter your name: ");
+            string userName = Console.ReadLine();
+            Console.WriteLine("{0}, welcome!", userName);
+
+        }
+
+    }
+}
